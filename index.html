@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pu'er Planet</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container">
+                    <!-- Logo and immediately followed by menu (on desktop) -->
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="navbar-brand logo me-3">Pu'er <span>Planet</span></a>
+                        <!-- Menu items for desktop only -->
+                        <div class="d-none d-lg-block">
+                            <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item me-3"><a href="#" class="nav-link">Home</a></li>
+                                <li class="nav-item me-3"><a href="#" class="nav-link">About</a></li>
+                                <li class="nav-item me-3"><a href="#" class="nav-link text-primary">Shop</a></li>
+                                <li class="nav-item me-3"><a href="#" class="nav-link">Subscriptions</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Hamburger button for mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Mobile menu only -->
+                        <ul class="navbar-nav d-lg-none">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-primary">Shop</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Subscriptions</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                        </ul>
+                        
+                        <!-- Search box - shown on all screens -->
+                        <form class="d-flex mx-lg-auto my-3 my-lg-0">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search for teas..." aria-label="Search">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Login/Shop Now buttons -->
+                        <div class="d-flex mt-3 mt-lg-0">
+                            <a href="#" class="btn btn-outline-secondary me-2">Login</a>
+                            <a href="#" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="display-4 mb-4">Experience the Ancient Art of
+                            Pu'er Tea</h1>
+                        <p class="lead mb-4">Indulge in our carefully curated
+                            selection of premium Pu'er teas, crafted from the
+                            finest leaves of Yunnan Province. Discover the rich,
+                            smooth flavors and numerous health benefits of this
+                            ancient fermented tea.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Explore Our
+                            Pu'er Teas</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-container">
+                            <img src="img/tea.jpg" alt="Pu'erh Tea" class="tea-image img-fluid rounded border-warning shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Pu'erh Tea -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img src="img/why.jpg" alt="Pu'erh Tea"
+                            class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h2 class="display-6 mb-4">Why Pu'erh Tea?</h2>
+                        <p class="lead">Pu'er tea
+                            is a distinctive and ancient variety of fermented
+                            tea, deeply rooted in the rich cultural heritage of
+                            China's Yunnan Province. This exclusive tea is
+                            carefully crafted from the leaves of the revered
+                            "wild old tree", a
+                            native species that thrives in the province's lush,
+                            misty mountains. For centuries, the unique
+                            combination of the region's climate, soil, and
+                            traditional processing methods has yielded a tea
+                            that's not only prized for its earthy flavor profile
+                            but also celebrated for its potential health
+                            benefits and spiritual significance.</p>
+                        <p>Pu-erh tea stands out from other fermented teas, like
+                            kombucha, because the fermentation process involves
+                            the tea leaves themselves, not just the brewed
+                            tea.</p>
+                        <p>Pu-erh tea is commonly sold in compacted cake form,
+                            but loose-leaf options are also available.</p>
+                        <p>The health benefits of pu-erh tea are twofold,
+                            offering not only the advantages of regular tea but
+                            also the benefits associated with consuming
+                            fermented foods.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs" id="benefitsTabs"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active"
+                                    id="weightloss-tab" data-bs-toggle="tab"
+                                    data-bs-target="#weightloss" type="button"
+                                    role="tab">Weight Loss</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cholesterol-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#cholesterol" type="button"
+                                    role="tab">Cholesterol</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cancer-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#cancer" type="button"
+                                    role="tab">Cancer Research</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="liver-tab"
+                                    data-bs-toggle="tab" data-bs-target="#liver"
+                                    type="button" role="tab">Liver
+                                    Health</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="benefitsTabContent">
+                            <div class="tab-pane fade show active"
+                                id="weightloss" role="tabpanel">
+                                <h3>May Promote Weight Loss</h3>
+                                <p>There's some limited evidence to support the
+                                    use of pu-erh tea for weight loss. Animal
+                                    and test-tube studies have shown that pu-erh
+                                    tea may help synthesize fewer new fats while
+                                    burning more stored body fat.</p>
+                                <p>Pu-erh tea is fermented, so it can introduce
+                                    healthy probiotics — or beneficial gut
+                                    bacteria — into your body. These probiotics
+                                    may help improve your blood sugar control,
+                                    which plays a key role in weight management
+                                    and hunger.</p>
+                                <p class="text-muted"><em>Note: More research is
+                                        needed to conclusively prove weight loss
+                                        benefits in humans.</em></p>
+                            </div>
+                            <div class="tab-pane fade" id="cholesterol"
+                                role="tabpanel">
+                                <h3>Improves Cholesterol</h3>
+                                <p>Several animal studies have observed that
+                                    pu-erh tea extracts can benefit blood fat
+                                    levels. These extracts may help reduce
+                                    cholesterol in two key ways:</p>
+                                <ul>
+                                    <li>Increases excretion of dietary-fat-bound
+                                        bile acid</li>
+                                    <li>Decreases fat accumulation in the
+                                        body</li>
+                                </ul>
+                                <p class="text-muted"><em>Caution: These
+                                        findings are primarily from animal
+                                        studies and require further human
+                                        research.</em></p>
+                            </div>
+                            <div class="tab-pane fade" id="cancer"
+                                role="tabpanel">
+                                <h3>Cancer Research</h3>
+                                <p>In test-tube studies, pu-erh tea extracts
+                                    have shown potential in killing:</p>
+                                <ul>
+                                    <li>Breast cancer cells</li>
+                                    <li>Oral cancer cells</li>
+                                    <li>Colon cancer cells</li>
+                                </ul>
+                                <p class="text-muted"><em>Important: These are
+                                        preliminary findings. Pu-erh tea should
+                                        not be considered a cancer
+                                        treatment.</em></p>
+                            </div>
+                            <div class="tab-pane fade" id="liver"
+                                role="tabpanel">
+                                <h3>Potential Liver Health Benefits</h3>
+                                <p>Animal research suggests pu-erh tea may:</p>
+                                <ul>
+                                    <li>Help prevent or reverse nonalcoholic
+                                        fatty liver disease</li>
+                                    <li>Protect the liver from certain types of
+                                        damage</li>
+                                </ul>
+                                <p class="text-muted"><em>Disclaimer: Human
+                                        studies are needed to confirm these
+                                        potential benefits.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Featured Products</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <img
+                                src="img/classic.jpg"
+                                class="card-img-top"
+                                alt="Ethiopian Yirgacheffe">
+                            <div class="card-body">
+                                <h3 class="card-title">Pu'er Classic</h3>
+                                <p class="card-text text-muted">Organic Pu'er
+                                    Tea</p>
+                                <p class="card-text">This Shu Pu'er is notable
+                                    for its notes of earthy sweetness, hints of
+                                    cocoa and a woodsy, aromatic
+                                    finish.<br /><br /><br /></p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$52.00</span>
+                                    <a href="#" class="btn btn-primary">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <img
+                                src="img/tuo_cha.jpg"
+                                class="card-img-top" alt="Colombian Supremo">
+                            <div class="card-body">
+                                <h3 class="card-title">Pu'er Tuo Cha</h3>
+                                <p class="card-text text-muted">Organic Pu'er
+                                    Tea</p>
+                                <p class="card-text">This traditional style of
+                                    shu Pu'er offers an impressively robust
+                                    infusion that is credited to our unique
+                                    blend of vintages ranging from 2-4 years in
+                                    age.
+
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$65.00</span>
+                                    <a href="#" class="btn btn-primary">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <img
+                                src="img/ginger.jpg"
+                                class="card-img-top" alt="Sumatra Mandheling">
+                            <div class="card-body">
+                                <h3 class="card-title">Pu'er Ginger</h3>
+                                <p class="card-text text-muted">Organic Pu'er
+                                    Tea Blend</p>
+                                <p class="card-text">We blend bright, citrusy
+                                    and spicy ginger with zesty orange peel and
+                                    hints of lemongrass to provide balance to
+                                    robust, slightly earthy and full-bodied
+                                    Pu'er tea.</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$55.00</span>
+                                    <a href="#" class="btn btn-primary">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <img
+                                src="img/tea_cake.jpg"
+                                class="card-img-top" alt="Costa Rica Tarrazu">
+                            <div class="card-body">
+                                <h3 class="card-title">Pu'er Tea Cake</h3>
+                                <p class="card-text text-muted">Organic Pu'er
+                                    Tea Cake</p>
+                                <p class="card-text">A deep garnet infusion with
+                                    a dense, opaque liquor bears a mellow
+                                    sweetness that drinks remarkably smooth with
+                                    a rich earth body.<br /><br /></p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$45.00</span>
+                                    <a href="#" class="btn btn-primary">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img
+                            src="img/us.jpg"
+                            alt="Coffee roasting process"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Our Dedication to Pu'er Perfection</h2>
+                        <p class="lead">At Pu'er Planet, we believe that
+                            exceptional Pu'er tea starts with exceptional
+                            sourcing. We work directly with tea farmers who
+                            share our commitment to quality, sustainability, and
+                            ethical practices.</p>
+                        <p>Every leaf is carefully selected, fermented and aged
+                            with precision by our master tea artisans, and
+                            delivered fresh to your door, ensuring that you
+                            experience Pu'er tea at its absolute best.</p>
+                        <p>Our commitment to quality and health is unwavering.
+                            We only source organic, premium-grade tea leaves
+                            that are free from artificial additives, pesticides,
+                            and other harmful chemicals. Every step of our
+                            production process, from fermentation to packaging,
+                            is carefully designed to preserve the natural
+                            goodness and nutritional value of our Pu'er tea.
+                            While our products may be priced higher than others,
+                            we believe that the extra care, attention to detail,
+                            and dedication to quality make every sip truly
+                            valuable and worthwhile.</p>
+                        <a href="#" class="btn btn-warning mt-3">Learn More
+                            About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">From Leaf to Cup</h2>
+                <div class="accordion" id="leafToCupAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cultivationCollapse"
+                                data-number="1">
+                                Cultivation
+                            </button>
+                        </h3>
+                        <div id="cultivationCollapse"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#leafToCupAccordion">
+                            <div class="accordion-body">
+                                Our Pu'er tea leaves are carefully cultivated in
+                                the lush mountains of Yunnan Province, where the
+                                unique terroir and climate conditions allow for
+                                optimal growth.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#harvestingCollapse"
+                                data-number="2">
+                                Harvesting
+                            </button>
+                        </h3>
+                        <div id="harvestingCollapse"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#leafToCupAccordion">
+                            <div class="accordion-body">
+                                Our tea leaves are hand-picked at the peak of
+                                freshness, ensuring the highest quality and
+                                flavor profile.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fermentationCollapse"
+                                data-number="3">
+                                Fermentation
+                            </button>
+                        </h3>
+                        <div id="fermentationCollapse"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#leafToCupAccordion">
+                            <div class="accordion-body">
+                                Our tea leaves undergo a natural fermentation
+                                process, which enhances the flavor and aroma,
+                                and gives Pu'er tea its distinctive
+                                characteristics.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#agingCollapse"
+                                data-number="4">
+                                Aging
+                            </button>
+                        </h3>
+                        <div id="agingCollapse"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#leafToCupAccordion">
+                            <div class="accordion-body">
+                                Our Pu'er tea is carefully aged to allow the
+                                flavors to mature and develop, resulting in a
+                                rich, complex, and smooth tea experience.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#packagingCollapse"
+                                data-number="5">
+                                Packaging
+                            </button>
+                        </h3>
+                        <div id="packagingCollapse"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#leafToCupAccordion">
+                            <div class="accordion-body">
+                                We carefully package our Pu'er tea in a way that
+                                preserves the flavor and aroma, ensuring that
+                                every cup is a delight.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="display-6 text-center mb-5">What Pu'er Planet Tea
+                    Drinkers Are Saying</h2>
+
+                <div id="reviewCarousel" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"This is my first tasting of oolong tea and I'm in love! It's flavor is delicate yet robust and floral. Absolutely delicious, my new favorite tea."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Amber</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"The depth and complexity of this Pu'erh tea is incredible. Each sip tells a story of its origin in the misty mountains of Yunnan."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Michael</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-half"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"As someone interested in health benefits, I'm impressed by the potential of this fermented tea. Smooth taste and potential wellness boost!"</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Sarah</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"Rich, earthy, and absolutely transformative. This isn't just a tea, it's an experience that connects me to an ancient tradition."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Elena</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"I've been exploring different teas for years, and this Pu'erh is a revelation. The complexity is unmatched."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—David</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-half"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"As a wellness enthusiast, I appreciate the potential health benefits and the authentic, traditional preparation of this tea."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Rachel</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"The packaging is beautiful, and the tea itself is a journey through flavor and tradition. Highly recommend!"</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Lisa</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"From the moment I first brewed this tea, I was transported to the misty mountains of Yunnan. Simply magical."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—James</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-half"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"I never thought I'd be a tea connoisseur, but this Pu'erh has completely changed my perspective. The aged, woody notes are incredible!"</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Thomas</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"Perfect afternoon ritual. The smooth, rich flavor helps me unwind and the potential health benefits are a bonus."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Emma</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-half"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"As a tea sommelier, I can confidently say this is one of the most authentic Pu'erh teas I've ever tasted. The terroir truly speaks through each brew."</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Marcus</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <p
+                                                class="card-text fst-italic">"Incredible gift for my tea-loving father. He was blown away by the depth and quality of this Pu'erh. Will definitely be ordering again!"</p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center">
+                                                <strong
+                                                    class="text-muted">—Lucy</strong>
+                                                <div class="text-warning">
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                    <i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#reviewCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Section -->
+        <section class="bg-warning py-5 text-center">
+            <div class="container">
+                <h2 class="mb-4">Never Run Out of Perfect Pu'er</h2>
+                <p class="lead mb-4">Subscribe to receive premium Pu'er tea
+                    delivered directly to your door on your schedule. Pause,
+                    skip, or modify your subscription anytime.</p>
+                <a href="#"
+                    class="btn btn-primary btn-lg mb-4">Explore
+                    Subscriptions</a>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h3 class="mb-3">Stay Updated</h3>
+                        <form class="d-flex">
+                            <input type="email"
+                                class="form-control me-2"
+                                placeholder="Your email address">
+                            <button type="submit"
+                                class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class ="text-warning">Shop</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">All Teas</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Single Estate</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Blends</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Subscriptions</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Gift
+                                    Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class ="text-warning">Learn</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Tea Preparation</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Tea Education</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Our
+                                    Process</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Tea
+                                    Glossary</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class ="text-warning">About Us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Our
+                                    Story</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Sustainability</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Direct
+                                    Trade</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Careers</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class ="text-warning">Connect With Us</h4>
+                        <div class="social-icons mb-3">
+                            <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg></a>
+                            <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                              </svg></a>
+                            <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg></i></a>
+                            <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                              </svg></i></a>
+                            <a href="#" class="text-white me-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg></a>
+                        </div>
+                        <p class="mb-2">123 Tea Preparation Street<br>New York, NY 10001<br>USA</p>
+                        <p>info@puerplanet.com.au<br>(212) 123-4567</p>
+                    </div>
+                </div>
+                <hr class="border-light my-4">
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 <a href="#"
+                            class="navbar-brand logo">Pu'er
+                            <span>Planet</span></a>. All
+                        rights
+                        reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Toast -->
+        <div
+            class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast bg-white shadow-lg" role="alert"
+                id="feedbackToast">
+                <div class="toast-header bg-warning text-black">
+                    <strong class="me-auto">Hesitant to buy? Tell us
+                        why.</strong>
+                    <button type="button"
+                        class="btn-close btn-close-black"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3"
+                            placeholder="Share your hesitations in detail..."
+                            aria-label="Feedback Textarea"></textarea>
+                    </div>
+                    <button class="btn btn-primary w-100">Submit
+                        Feedback</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS and dependencies -->
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var feedbackToast = new bootstrap.Toast(document.getElementById('feedbackToast'), {
+                        autohide: false
+                    });
+                    feedbackToast.show();
+                });
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
