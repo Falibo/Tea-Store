@@ -1,0 +1,115 @@
+
+.logo { 
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: bold; 
+}
+.logo span { 
+    color: #ffc107; 
+}
+.navbar form {
+    max-width: 100%;
+}
+.hero {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+.image-container {
+    overflow: hidden;
+    border-radius: 0.25rem; /* To match the rounded class */
+}
+.tea-image {
+    transition: transform 0.5s ease;
+}
+.tea-image:hover {
+    transform: scale(1.2);
+}
+.image-container {
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.product-card {
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#leafToCupAccordion .accordion-button::before {
+    content: attr(data-number);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    }
+
+#leafToCupAccordion .accordion-button {
+    display: flex;
+    align-items: center;
+}
+
+#leafToCupAccordion .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+}
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: crosshair ;
+}
+
+.carousel-control-prev {
+    left: -10px;
+}
+
+.carousel-control-next {
+    right: -10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%230000FF' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%230000FF' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+
+@media (min-width: 992px) {
+    .navbar form {
+        width: 300px;
+    }
+}
+
